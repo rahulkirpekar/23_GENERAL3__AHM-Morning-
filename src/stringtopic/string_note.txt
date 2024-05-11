@@ -1,0 +1,71 @@
+String:-
+-----------
+ java
+  |
+ lang
+  |
+String--(class)---(Multiple characters)
+
+
+	character---
+
+		1) char value = sc.next().charAt(0);// r
+
+		2) char value = (char)System.in.read();// A---65
+
+
+
+
+		Way to operation on String type Data		
+		---------------------------------------
+
+	1) ImmutableWay				2) MutableWay
+	-----------------			---------------
+	---> String(class)			---> StringBuilder(class)
+						---> StringBuffer(class)
+1) ImmutableWay	:-
+-----------------
+
+	1) By String Literal way---[RAM-----HEAP----[String Constant Pool]]:-
+	-------------------------------------------------------------------
+
+		String name1 = "royal";
+		String name2 = "royal";
+		String name3 = "techno";
+		String name4 = name1;
+		String name5 = name1.concat(" technosoft");
+		
+Object Equality:-
+------------------
+	1) reference Based(==)		2) values Based(equals())
+	--------------------		--------------------
+	SOP(name1==name2);//true	SOP(name1.equals(name2));//true
+	SOP(name1==name3);//false	SOP(name1.equals(name3));//false
+	SOP(name1==name4);//true	SOP(name1.equals(name4));//true
+	SOP(name1==name5);//false	SOP(name1.equals(name5));//false
+
+	2) By 'new' Keywordway[RAM-----HEAP]:-
+	----------------------------------------
+
+		String name1 = new String("rahul");
+		String name2 = new String("rahul");
+		String name3 = new String("royal");
+
+	SOP(name1==name2);//false	SOP(name1.equals(name2));//true
+	SOP(name1==name3);//false	SOP(name1.equals(name3));//false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
