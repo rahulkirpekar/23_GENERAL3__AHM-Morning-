@@ -57,9 +57,12 @@ Object Equality:-
 
 
 
+2) MutableWay:-
+---------------
 
+---> StringBuilder(class)
 
-
+---> StringBuffer(class)--MultiThreadding concept---Application---Threadsafe---synchronised
 
 
 
